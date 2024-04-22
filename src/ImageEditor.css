@@ -8,13 +8,14 @@
 @import url('@syncfusion/ej2-image-editor/styles/material.css');
 
 .image-editor-container{
-    background: #6d6161;
-    background-color: #9795955b;
+    background: #6d6161cb;
+    padding: 15rem;
+    padding-bottom: 0; 
     display: flex;
     width: 100%;
+    height: 140vh;
     justify-content: center;
     align-items: center;
-    height: 90vh;
   }
 
 
