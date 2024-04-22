@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@syncfusion/ej2": "^25.1.40",
+    "@syncfusion/ej2-react-image-editor": "^25.1.40",
     "axios": "^1.6.8",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
@@ -17,7 +19,8 @@
     "http-proxy-middleware": "^3.0.0",
     "openai": "^4.38.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
