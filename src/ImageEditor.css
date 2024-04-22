@@ -8,41 +8,17 @@
 @import url('@syncfusion/ej2-image-editor/styles/material.css');
 
 .image-editor-container{
+    background: #6d6161;
+    background-color: #9795955b;
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 5rem;
+    height: 90vh;
   }
-  .image-editor{
-    border: 1px solid #ccc;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    max-width: 600px;
-    width: 70%;
-  }
-  .toolbar{
-    background-color: #f5f5f5;
-    padding:10px;
-  }
-  .toolbar button {
-    background-color: #e0e0e0;
-    border: none; 
-    padding: 6px 12px;
-    margin-right: 10px;
-    font-size: 14px;
-    cursor: pointer;
-  }
-  .toolbar button:hover {
-    background-color: #bdbdbd;
-  }
-  .canvas{
-    background-color:#f9f9f9;
-    padding:20px;
-  }
-  .canvas img{
-    max-width: 70%;
-    padding: 20px;
-  }
+
+
+
   
   
   
