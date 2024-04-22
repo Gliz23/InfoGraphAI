@@ -1,13 +1,7 @@
 import React, { useState} from 'react'
 import './create.css'
 import CardToTextarea from '../CardToTextarea/CardToTextarea.jsx';
-import InfoGraphic from '../InfoGraphic/InfoGraphic.jsx'; 
 
-// const configuration = new Configuration({
-//   apiKey: import.meta.env.VITE_MY_API_KEY,
-// })
-// console.log(import.meta.env.VITE_MY_API_KEY)
-// const openai = new OpenAIApi(configuration)
 
 let apiKey = import.meta.env.VITE_MY_API_KEY
  
