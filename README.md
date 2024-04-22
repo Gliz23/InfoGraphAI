@@ -31,3 +31,9 @@ git commit InfoGraph AI
 - You can copy the summary unto the clipboard with the copy button.
 
 - If you want to generate a new summary, you must delete the old one first.
+
+- Paste the copied summary text into the text box under InfoGraphic Maker.
+
+- Click generate to produce your infographic.
+
+- Edit thee infographic by dragging and dropping the image into the image editor below.
