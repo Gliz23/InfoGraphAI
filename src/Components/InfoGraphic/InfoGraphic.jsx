@@ -1,8 +1,9 @@
 import React, { useState, useRef } from 'react';
 import './InfoGraphic.css';
-import axios from 'axios';
+// import axios from 'axios';
 import image from '../../assets/nicebg.jpg';
 import OpenAI from 'openai';
+import Card from '../Card.jsx'
 
 const openai = new OpenAI({ apiKey:import.meta.env.VITE_MY_API_KEY, dangerouslyAllowBrowser: true });
 
@@ -35,9 +36,17 @@ const InfoGraphic = () => {
   }
 
   return (
-    <div>
+    <div className='info-space'>
+      <Card
+        title="Edit the text"
+        text="You can edit the text in the text button before generating"
+      />
+
       <div className='infographic-maker'>
-        <div className='header'>InfoGraphic Maker</div>
+        <div className='header'>
+          InfoGraphic Maker
+        </div>
+
         <div className='loading'>
           <div className='image'>
             <img src={infoImage === '' ? image : infoImage} alt='infographic' />
@@ -59,6 +68,11 @@ const InfoGraphic = () => {
           </button>
         </div>
       </div>
+
+      <Card
+        title="Edit the infographic"
+        text="Edit the infographic by dragging and dropping the generated infographic in the image editor below"
+      />
     </div>
   );
 }

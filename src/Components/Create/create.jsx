@@ -1,6 +1,7 @@
 import React, { useState} from 'react'
 import './create.css'
 import CardToTextarea from '../CardToTextarea/CardToTextarea.jsx';
+import Card from '../Card.jsx'
 
 
 let apiKey = import.meta.env.VITE_MY_API_KEY
@@ -60,7 +61,8 @@ const Create = () => {
 
 
   return (
-    <div className='create'>
+    
+      <div className='create'>
         <div className="create-text">
             <h3 className='text'>
                 Your Text!
@@ -85,17 +87,34 @@ const Create = () => {
             >Submit</button>
             ))}
         </div>
+        
 
         <div className="summary">
-            {data?.length > 0 &&
-            <> 
+          {data?.length > 0 &&
+          <Card
+            title="Copy your summary"
+            text="This can be done by simply clicking the copy button"
+          />
+          }
+
+          {data?.length > 0 &&
+          <div className="actual-summary">
             <h2 className='text'>Summary</h2>
             <CardToTextarea data={data} onDelete={handleDelete}/>
-            </>
-            }
+          </div> 
+          }
+
+          {data?.length > 0 &&
+          <Card
+            title="Generate your infograph"
+            text="Paste your copied text 'Ctrl V' in the text box below and generate your infographic"
+          />
+          }
         </div>
+
+      </div>
       
-    </div>
+    
   )
 }
 

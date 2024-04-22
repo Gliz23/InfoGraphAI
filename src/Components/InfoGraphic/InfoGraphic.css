@@ -1,5 +1,22 @@
-.infographic-maker{
+.info-space{
+    display:flex;
+    flex-direction: row;
     background: #7e67d3a2;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.card{
+    width:15%;
+    height: 200px;
+    background-color: rgba(93, 86, 97, 0.233);
+    color:rgb(255, 254, 255);
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 15px;
+    font-family:'Courier New', Courier, monospace;
+}
+.infographic-maker{
     display:flex;
     flex-direction: column;
     margin: auto;

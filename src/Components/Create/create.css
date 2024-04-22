@@ -12,13 +12,35 @@
     align-items: center;
     justify-content: center;
 }   
-.create-text, .summary{
+.create-text{
     flex-direction: column;
-    width: 65%;
+    width: 60%;
     align-items: center;
     justify-content: center;
-    
 }
+.summary{
+    width:100%;
+    min-width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.actual-summary{
+    width: 60%;
+    margin: 1rem;
+}
+.card{
+    width:15%;
+    height: 200px;
+    background-color: rgba(136, 147, 151, 0.055);
+    color:rgb(255, 254, 255);
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 15px;
+    font-family:'Courier New', Courier, monospace;
+}
+
 .text{
     color: #000000dc;
     padding-left: 1.5rem;
