@@ -11,11 +11,7 @@ InfoGraph AI is a tool that you can use to create simple and customized infograp
 Clone the repo and download it
 
 ```bash
-git clone InfoGraphAI
-```
-
-```python
-git commit InfoGraph AI
+git clone https://github.com/Gliz23/InfoGraphAI.git
 ```
 
 ## Usage
