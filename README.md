@@ -1,5 +1,6 @@
 ![InfoGraph AI (1)](https://github.com/Gliz23/InfoGraphAI/blob/main/src/assets/banner.png)
 
+![Logo](https://github.com/Gliz23/InfoGraphAI/blob/main/src/assets/flogo.png)
 
 # InfoGraph AI
 
