@@ -44,3 +44,17 @@
     color: #000000;
     border-color: #6B7280;
 }
+.c-button:active, .s-button:active {
+    box-shadow: 0 0 8px 3px rgba(255, 164, 0, 0.8);
+}
+@keyframes glow {
+    0%{
+        box-shadow:0 0 4px 3px rgba(255, 164, 0, 0.8)
+    }
+    50%{
+        box-shadow:0 0 20px 6px rgba(255, 164, 0, 0.8)
+    }
+    100%{
+        box-shadow:0 0 6px 3px rgba(255, 164, 0, 0.8)
+    }
+}

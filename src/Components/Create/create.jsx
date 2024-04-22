@@ -1,6 +1,16 @@
 import React, { useState} from 'react'
 import './create.css'
 import CardToTextarea from '../CardToTextarea/CardToTextarea.jsx';
+import InfoGraphic from '../InfoGraphic/InfoGraphic.jsx'; 
+
+// const configuration = new Configuration({
+//   apiKey: import.meta.env.VITE_MY_API_KEY,
+// })
+// console.log(import.meta.env.VITE_MY_API_KEY)
+// const openai = new OpenAIApi(configuration)
+
+let apiKey = import.meta.env.VITE_MY_API_KEY
+ 
 
 const Create = () => {
     const [value, setValue] = useState('');
@@ -11,19 +21,19 @@ const Create = () => {
   
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault();``
     setSubmitted(true);
 
     const requestOptions = {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer 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',
+        'Authorization': `Bearer ${apiKey}`   
       },
       body: JSON.stringify({
         prompt: value + `\\n\\nTl;dr`,
         temperature: 0.1,
-        max_tokens: 100,
+        max_tokens: 25,
         top_p: 1,
         frequency_penalty: 0,
         presence_penalty: 0.5,
@@ -37,7 +47,6 @@ const Create = () => {
         const text = dt.choices[0].text;
         setSubmitted(false);
         setData(text)
-        console.log(data)
         
       })
       .catch((error) => {
