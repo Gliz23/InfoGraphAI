@@ -1,4 +1,4 @@
-![InfoGraph AI (1)](https://github.com/Gliz23/trial-repo/assets/102699848/9bfd2b25-50b0-41a4-b0da-d821236c8771)
+![InfoGraph AI (1)](https://github.com/Gliz23/InfoGraphAI/blob/main/src/assets/banner.png)
 
 
 # InfoGraph AI
