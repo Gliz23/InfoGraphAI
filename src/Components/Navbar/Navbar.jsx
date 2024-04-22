@@ -8,7 +8,6 @@ const Navbar = () => {
         <img className='logo' src={logo} alt="logo image" />
         <ul>
             <li>Home</li>
-            <li>Create</li>
             <li>About Us</li>
             <li><button className ='button'>Contact Us</button></li>
         </ul>
