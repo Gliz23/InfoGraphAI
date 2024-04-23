@@ -8,11 +8,59 @@ InfoGraph AI is a tool that you can use to create simple and customized infograp
 
 ## Installation
 
-Clone the repo and download it
+Get a copy of the repo by cloning it.
 
 ```bash
 git clone https://github.com/Gliz23/InfoGraphAI.git
 ```
+
+How to run it locally.
+
+1. Install Node and a package manager.
+   Node is a JavaScript runtime which allows you to run JavaScript code outside a browser.
+   You need a package manager like npm(node package manager) to manage the packages in the React App.
+   Visit the official Node.js website and download the latest version for your operating system.
+   Install it by clicking on the downloaded file and following the instructions.
+
+2. You can verify the instalation by running.
+
+   ```bash
+   node --version
+   ```
+
+   ```bash
+   npm --version
+   ```
+
+3. Chose a text editor or and IDE (integrated Development Environment) like Visual Studio Code and configure it to run JavaScript and React code.
+
+4. Open the cloned repo in Visual Studio code.
+
+5. In the terminal, navigate to the directory of the repository you cloned and run
+
+   ```bash
+   npm run dev
+   ```
+
+   You can acces the app by pasting the diplayed link in your browser.
+
+6. You need an API key from openAI to run this app.
+
+   - Go to the official site (https://platform.openai.com)
+
+   -Sign up and locate the API keys section by moving the mouse pointer to the 'Your Profile' icon (P) at the top left section of the page.
+
+   - Click on create new secret key and copy the key and paste it in a secure place you can acces later.
+
+   - In the root directory of the cloned app, create a .env file and put the key in the file.
+
+   ```bash
+   VITE_MY_API_KEY = YOUR_API_KEY
+   ```
+
+   Replace YOUR_API_KEY with the api key you generated.
+
+7. You need internect connection to generate the Summary and the InfoGraphic.
 
 ## Usage
 

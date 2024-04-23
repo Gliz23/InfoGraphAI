@@ -18,7 +18,7 @@ const InfoGraphic = () => {
     // 1792
     try {
       const response = await openai.images.generate({
-        prompt: `Create a real life infographic with this text: ${inputRef.current.value}`,
+        prompt: `Create a professional infographic with this text: ${inputRef.current.value}`,
         model: 'dall-e-2',
         n: 1,
         size: '1024x1024'
