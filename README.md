@@ -46,29 +46,29 @@ How to run it locally.
    code .
    ```
 
-5. In the terminal, navigate to the directory of the repository you cloned and run
+5. You need an API key from openAI to run this app.
 
-   ```bash
-   npm run dev
-   ```
+- Go to the official site (https://platform.openai.com)
 
-   You can acces the app by pasting the diplayed link in your browser.
+-Sign up and locate the API keys section by moving the mouse pointer to the 'Your Profile' icon (P) at the top left section of the page.
 
-6. You need an API key from openAI to run this app.
+- Click on create new secret key and copy the key and paste it in a secure place you can acces later.
 
-   - Go to the official site (https://platform.openai.com)
+- In the root directory of the cloned app, create a .env file and put the key in the file.
 
-   -Sign up and locate the API keys section by moving the mouse pointer to the 'Your Profile' icon (P) at the top left section of the page.
+```bash
+VITE_MY_API_KEY = YOUR_API_KEY
+```
 
-   - Click on create new secret key and copy the key and paste it in a secure place you can acces later.
+Replace YOUR_API_KEY with the api key you generated.
 
-   - In the root directory of the cloned app, create a .env file and put the key in the file.
+6. In the terminal, navigate to the directory of the repository you cloned and run
 
-   ```bash
-   VITE_MY_API_KEY = YOUR_API_KEY
-   ```
+```bash
+npm run dev
+```
 
-   Replace YOUR_API_KEY with the api key you generated.
+You can acces the app by pasting the diplayed link in your browser.
 
 7. You need internect connection to generate the Summary and the InfoGraphic.
 
