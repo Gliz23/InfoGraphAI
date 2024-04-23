@@ -15,6 +15,27 @@ const Contact = () => {
           <li>infographai@gmail.com</li>
         </ul>
       </div>
+      <div className="contact-col">
+        <form>
+          <label>
+            Your name
+          </label>
+          <input type='text' name='name' placeholder='Enter your name' required/>
+          <label>
+            Phone Number
+          </label>
+          <input type='tel' name='phone'placeholder='Enter your phone number' required/>
+          <label>
+            Drop your comments
+          </label>
+          <textarea name='comments' rows='7' placeholder='Enter comments' required>
+          </textarea>
+          <button type='submit' className='btn dark-b'>
+            Send
+          </button>
+        </form>
+
+      </div>
     </div>
     
   )
