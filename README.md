@@ -1,7 +1,5 @@
 ![InfoGraph AI (1)](https://github.com/Gliz23/InfoGraphAI/blob/main/src/assets/banner.png)
 
-![Logo](https://github.com/Gliz23/InfoGraphAI/blob/main/src/assets/flogo.png)
-
 # InfoGraph AI
 
 InfoGraph AI is a tool that you can use to create simple and customized infographics.
@@ -61,6 +59,8 @@ How to run it locally.
    Replace YOUR_API_KEY with the api key you generated.
 
 7. You need internect connection to generate the Summary and the InfoGraphic.
+
+![Logo](https://github.com/Gliz23/InfoGraphAI/blob/main/src/assets/flogo.png)
 
 ## Usage
 
