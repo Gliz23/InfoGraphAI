@@ -28,3 +28,7 @@ ul li {
 ul li:active {
     box-shadow: 0 0 5px 2px rgba(172, 148, 112, 0.842);
   }
+.scroll-nav{
+    background: #661cbbe7;
+    transition: 0.5s;
+}
