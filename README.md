@@ -98,4 +98,8 @@ You can acces the app by pasting the diplayed link in your browser.
 
 - Click generate to produce your infographic.
 
-- Edit thee infographic by dragging and dropping the image into the image editor below.
+- Edit the infographic by right-clicking on the image and saving it.
+
+- In the image editor, move to the annotation button which is at the top center of the editor and locate add image.
+
+- Edit to suite your style and save by ckicking on the save button on the top right corner of the Image Editor

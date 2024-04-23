@@ -12,6 +12,7 @@ import NoPage from './Components/NoPage.jsx'
 
 import About from './Components/About/About.jsx'
 import Contact from './Components/Contact/Contact.jsx'
+import Footer from './Components/Footer/Footer.jsx'
 
 
 
@@ -22,8 +23,8 @@ const App = () => {
     <>
     <BrowserRouter>
       <Routes>
-        <Route index element = {<><Navbar/><Hero/><About/><Contact/></>}/>
-        <Route path = '/Home' element = {<><Navbar/><Hero/><About/><Contact/></>} />
+        <Route index element = {<><Navbar/><Hero/><About/><Contact/><Footer/></>}/>
+        <Route path = '/Home' element = {<><Navbar/><Hero/><About/><Contact/><Footer/></>} />
         <Route path = '/Create' element = {<><Navbar class='create-nav'/><Create/></>} />
         <Route path = '/InfoGraphic' element = {<>
           <Navbar/>

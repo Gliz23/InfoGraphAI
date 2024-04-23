@@ -10,10 +10,11 @@
 .image-editor-container{
     background: #6d6161cb;
     padding: 15rem;
-    padding-bottom: 0; 
+    padding-top: 5rem;
+    padding-bottom: 3rem; 
     display: flex;
     width: 100%;
-    height: 140vh;
+    height: 120vh;
     justify-content: center;
     align-items: center;
   }

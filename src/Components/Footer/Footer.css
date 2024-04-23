@@ -1,0 +1,12 @@
+.footer{
+    display :flex;
+    border-top: 1px solid #787878;
+    color: rgb(70, 65, 65);
+    padding: 20px 0;
+    padding-left: 30px;
+    background: rgba(182, 164, 164, 0.082);
+}
+.footer p{
+    text-align: center;
+    flex-basis: 100%;
+  }
