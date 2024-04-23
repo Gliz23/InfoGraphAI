@@ -34,10 +34,16 @@ How to run it locally.
 
 4. Open the cloned repo in Visual Studio code.
 
-   - Navigate to the directory
+   - Navigate to the directory on the command Prompt
 
    ```bash
    cd InfoGraphAI
+   ```
+
+   - in the project's root directory, run the following command to install the project's dependencies specified in the package.json file:
+
+   ```bash
+   npm install
    ```
 
    - Open it in Visual Studio Code
