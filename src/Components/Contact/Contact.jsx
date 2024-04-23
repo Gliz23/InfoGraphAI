@@ -30,11 +30,10 @@ const Contact = () => {
           </label>
           <textarea name='comments' rows='7' placeholder='Enter comments' required>
           </textarea>
-          <button type='submit' className='btn dark-b'>
+          <button type='submit' className='s-button dark-b'>
             Send
           </button>
         </form>
-
       </div>
     </div>
     

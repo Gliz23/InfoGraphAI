@@ -22,9 +22,9 @@ const App = () => {
     <>
     <BrowserRouter>
       <Routes>
-        <Route index element = {<><Navbar/><Hero/><About/></>}/>
-        <Route path = '/Home' element = {<><Navbar/><Hero/><About/></>} />
-        <Route path = '/Create' element = {<><Navbar/><Create/></>} />
+        <Route index element = {<><Navbar/><Hero/><About/><Contact/></>}/>
+        <Route path = '/Home' element = {<><Navbar/><Hero/><About/><Contact/></>} />
+        <Route path = '/Create' element = {<><Navbar class='create-nav'/><Create/></>} />
         <Route path = '/InfoGraphic' element = {<>
           <Navbar/>
           <InfoGraphic/>
@@ -33,7 +33,7 @@ const App = () => {
           </div>
         </>}/>
 
-        <Route path = '/Contact' element = {<><Navbar/><Contact/></>} />
+        <Route path = '/Contact' element = {<><Navbar class='contact-nav'/><Contact/></>} />
         <Route path = '/*' element = {<NoPage/>} />
       </Routes>
   </BrowserRouter>

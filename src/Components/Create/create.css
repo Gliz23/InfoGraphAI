@@ -1,11 +1,7 @@
 .create{
     width:100%;
     min-height: 100vh; 
-    background: linear-gradient(
-        rgba(179, 2, 179, 0.747) 0%,
-        rgba(0, 0, 0, 0.74) 20%,
-        rgba(0, 0, 0, 0.74) 100%
-    ), rgba(122, 119, 119, 0.363);
+    background: rgba(150, 148, 148, 0.363);
 
     background-size: cover;
     background-position: center;

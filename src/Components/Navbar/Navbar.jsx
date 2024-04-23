@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import './Navbar.css'
 import logo from '../../assets/flogo.png'
 
-const Navbar = () => {
+const Navbar = (props) => {
 
   const navigate = useNavigate()
   const [sticky, setSticky] = useState(false)
@@ -15,7 +15,7 @@ const Navbar = () => {
   },[])
     
   return (
-    <nav className={`container ${sticky? 'scroll-nav' : ''}`}>
+    <nav className={`${props.class} container ${sticky? 'scroll-nav' : ''}`}>
         <img className='logo' src={logo} alt="logo image" />
         <ul>
             <li onClick={() => navigate('/Home')}>Home</li>
