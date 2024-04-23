@@ -1,0 +1,29 @@
+.about{
+    padding:1rem;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.loc{
+    display: flex;
+    flex-direction: row;
+}
+
+.about-img{
+    width: 32rem;
+    height: auto;
+}
+.about-left{
+    padding-right: 1rem;
+}
+h3{
+    font-size: 35px;
+    font-weight: lighter;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 3rem;
+}
+.about-right{
+    max-width: 800px;
+    text-align: justify;
+}

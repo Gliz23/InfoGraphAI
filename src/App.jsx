@@ -7,10 +7,12 @@ import { ImageEditorComponent } from '@syncfusion/ej2-react-image-editor';
 import './ImageEditor.css'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import NoPage from './Components/NoPage.jsx'
+
+
 import About from './Components/About/About.jsx'
-// import Contact from './Components/Contact/Contact.jsx'
-// import Create from './Pages/Create.jsx'
-// import NoPage from './Pages/NoPage.jsx'
+import Contact from './Components/Contact/Contact.jsx'
+
 
 
 
@@ -19,24 +21,20 @@ const App = () => {
   return (
     <>
     <BrowserRouter>
-    <div>
-      <Navbar/>
-      <Hero/>
-      <Create/>
-      <InfoGraphic/>
-      <div className="image-editor-container">
-      <ImageEditorComponent/>
-      </div>
-    </div>
-
-    
       <Routes>
-        <Route index element = {<Hero/>}/>
-        <Route path = '/Home' element = {<Hero/>} />
-        <Route path = '/About' element = {<About/>} />
-        {/* <Route path = '/Contact' element = {<Contact/>} /> */}
-        {/* <Route path = '/Create' element = {<Create/>} /> */}
-        {/* <Route path = '/*' element = {<NoPage/>} /> */}
+        <Route index element = {<><Navbar/><Hero/><About/></>}/>
+        <Route path = '/Home' element = {<><Navbar/><Hero/><About/></>} />
+        <Route path = '/Create' element = {<><Navbar/><Create/></>} />
+        <Route path = '/InfoGraphic' element = {<>
+          <Navbar/>
+          <InfoGraphic/>
+          <div className="image-editor-container">
+            <ImageEditorComponent/>
+          </div>
+        </>}/>
+
+        <Route path = '/Contact' element = {<><Navbar/><Contact/></>} />
+        <Route path = '/*' element = {<NoPage/>} />
       </Routes>
   </BrowserRouter>
     </>

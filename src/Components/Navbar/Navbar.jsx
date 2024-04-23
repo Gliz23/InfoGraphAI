@@ -10,7 +10,9 @@ const Navbar = () => {
         <img className='logo' src={logo} alt="logo image" />
         <ul>
             <li onClick={() => navigate('/Home')}>Home</li>
-            <li onClick={() => navigate('/About')}>About Us</li>
+            <li onClick={() => navigate('/Create')}>Create</li>
+            <li onClick={() => navigate('/InfoGraphic')}>InfoGraphic</li>
+            
             <li><button className ='button' onClick={() => navigate('/Contact')}>Contact Us</button></li>
         </ul>
       

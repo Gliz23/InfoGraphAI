@@ -64,7 +64,7 @@ const CardToTextarea = (props) => {
                         <p>{text}</p>                
                     </div>  
 
-                    <span>
+                    <span className='buttons'>
                         <button
                         className='c-button'
                         onClick={handleCopy}

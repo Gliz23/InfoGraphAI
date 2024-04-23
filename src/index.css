@@ -53,3 +53,16 @@ a{
         box-shadow:0 0 6px 3px rgba(255, 164, 0, 0.8)
     }
 }
+.card{
+    width:15%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: rgba(136, 147, 151, 0.055);
+    color:rgb(255, 254, 255);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 15px;
+    font-family:'Courier New', Courier, monospace;
+}
