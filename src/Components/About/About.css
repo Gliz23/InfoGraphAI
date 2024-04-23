@@ -1,5 +1,4 @@
 .about{
-    padding:1rem;
     padding-top: 5rem;
     display: flex;
     flex-direction: column;
@@ -8,22 +7,31 @@
 .loc{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
 }
 
 .about-img{
-    width: 32rem;
+    width: 100%;
+    border-radius: 12px;
     height: auto;
 }
 .about-left{
+    flex-basis:40%;
     padding-right: 1rem;
 }
-h3{
-    font-size: 35px;
-    font-weight: lighter;
+.about h3{
+    font-size: 25px;
+    font-weight: 600;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 3rem;
+    color: #021447d2;
+}
+.about .loc p{
+    color: #4b4a4a
 }
 .about-right{
-    max-width: 800px;
+    flex-basis:56%;
     text-align: justify;
 }
