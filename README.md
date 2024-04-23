@@ -34,6 +34,18 @@ How to run it locally.
 
 4. Open the cloned repo in Visual Studio code.
 
+   - Navigate to the directory
+
+   ```bash
+   cd InfoGraphAI
+   ```
+
+   - Open it in Visual Studio Code
+
+   ```bash
+   code .
+   ```
+
 5. In the terminal, navigate to the directory of the repository you cloned and run
 
    ```bash
