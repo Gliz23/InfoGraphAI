@@ -4,7 +4,7 @@ function Card(props) {
 
     return(
         <>
-        <div className="card">
+        <div className= {`${props.card}`}>
             <div className='card-text'>
                 <h2>{props.title}</h2>
                 <p>{props.text}</p>

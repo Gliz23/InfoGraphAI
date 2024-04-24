@@ -92,6 +92,7 @@ const Create = () => {
         <div className="summary">
           {data?.length > 0 &&
           <Card
+            card='create-card'
             title="Copy your summary"
             text="This can be done by simply clicking the copy button"
           />
@@ -106,6 +107,7 @@ const Create = () => {
 
           {data?.length > 0 &&
           <Card
+            card='create-card'
             title="Generate your infograph"
             text="Paste your copied text 'Ctrl V' in the text box below and generate your infographic"
           />

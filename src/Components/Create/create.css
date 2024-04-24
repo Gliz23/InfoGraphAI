@@ -26,6 +26,17 @@
     align-items: center;
     justify-content: center;
 }
+.create-card{
+    display: flex;
+    width:15%;
+    height: auto;
+    background-color: rgba(93, 86, 97, 0.233);
+    color:rgb(10, 8, 10);
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 15px;
+    font-family:'Courier New', Courier, monospace;
+}
 .actual-summary{
     width: 60%;
     margin: 1rem;

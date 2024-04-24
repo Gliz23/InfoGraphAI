@@ -18,7 +18,7 @@ const InfoGraphic = () => {
     // 1792
     try {
       const response = await openai.images.generate({
-        prompt: `Create a professional infographic with this text: ${inputRef.current.value}`,
+        prompt: `Create a professional infographic with charts and pictures on a white background with this text: ${inputRef.current.value}`,
         model: 'dall-e-2',
         n: 1,
         size: '1024x1024'
@@ -38,6 +38,7 @@ const InfoGraphic = () => {
   return (
     <div className='info-space'>
       <Card
+        card='info-card'
         title="Edit the text"
         text="You can edit the text in the text button before generating"
       />
@@ -70,8 +71,9 @@ const InfoGraphic = () => {
       </div>
 
       <Card
+        card='info-card'
         title="Edit the infographic"
-        text="Edit the infographic by dragging and dropping the generated infographic in the image editor below"
+        text="Edit the infographic by right clicking on the image and selecting the 'save image as...'option. Then in the editor, click browse and select the image." 
       />
     </div>
   );

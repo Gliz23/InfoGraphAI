@@ -58,10 +58,10 @@ a{
     display: flex;
     flex-direction: column;
     height: auto;
-    background-color: rgba(136, 147, 151, 0.055);
-    color:rgb(255, 254, 255);
+    background-color: rgba(144, 158, 163, 0.336);
+    color:rgb(20, 18, 20);
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    border:none;
     padding: 20px;
     font-size: 15px;
     font-family:'Courier New', Courier, monospace;
