@@ -13,6 +13,8 @@ import NoPage from './Components/NoPage.jsx'
 import About from './Components/About/About.jsx'
 import Contact from './Components/Contact/Contact.jsx'
 import Footer from './Components/Footer/Footer.jsx'
+import Text1 from './Components/BG Templates/Template1/Text1.jsx'
+import ImageGen from './Components/ImageGen.jsx'
 
 
 
@@ -35,7 +37,7 @@ const App = () => {
         </>}/>
 
         <Route path = '/Contact' element = {<><Navbar class='contact-nav'/><Contact/></>} />
-        <Route path = '/*' element = {<NoPage/>} />
+        <Route path = '/*' element = {<><NoPage/><ImageGen/></>} />
       </Routes>
   </BrowserRouter>
     </>

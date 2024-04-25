@@ -1,7 +1,7 @@
 .create{
     width:100%;
     min-height: 100vh; 
-    background: rgba(150, 148, 148, 0.363);
+    background: rgba(75, 75, 75, 0.753);
 
     background-size: cover;
     background-position: center;
@@ -54,7 +54,7 @@
     height: 300px;
     border-radius: 2rem;
     border-width:0.5px;
-    border-color: #5d477ce5;
+    border-color: none;
     background: linear-gradient(
         rgba(210, 84, 214, 0.596),
         rgba(90, 34, 128, 0.685));
