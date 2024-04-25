@@ -1,7 +1,7 @@
 .create{
     width:100%;
     min-height: 100vh; 
-    background: rgba(75, 75, 75, 0.753);
+    background: rgba(146, 145, 145, 0.856);
 
     background-size: cover;
     background-position: center;
@@ -30,8 +30,8 @@
     display: flex;
     width:15%;
     height: auto;
-    background-color: rgba(93, 86, 97, 0.233);
-    color:rgb(10, 8, 10);
+    background-color: rgba(19, 18, 19, 0.411);
+    color:rgb(247, 247, 247);
     border-radius: 20px;
     padding: 20px;
     font-size: 15px;

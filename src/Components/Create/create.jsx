@@ -26,9 +26,10 @@ const Create = () => {
         'Authorization': `Bearer ${apiKey}`   
       },
       body: JSON.stringify({
-        prompt: value + `\\n\\nTl;dr`,
+        // prompt: value + `\\n\\nTl;dr`,
+        prompt: `Create an infographic ordered text with a title and 7 bulleted points on new lines with the following content: ${value}.`,
         temperature: 0.1,
-        max_tokens: 25,
+        max_tokens: 500,
         top_p: 1,
         frequency_penalty: 0,
         presence_penalty: 0.5,

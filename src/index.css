@@ -66,3 +66,14 @@ a{
     font-size: 15px;
     font-family:'Courier New', Courier, monospace;
 }
+.fg-button{
+    background: #995bd3b7;
+    color: #292727f8;
+    margin: 20px 20px;
+    padding: 14px 25px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+}

@@ -26,7 +26,7 @@ class ImageGen extends React.Component {
       return (
         <div>
           <Text1/>
-          <button onClick={this.captureImage}>Download Image</button>
+          <button className ={'fg-button'} onClick={this.captureImage}>Download Image</button>
         </div>
       );
     }
