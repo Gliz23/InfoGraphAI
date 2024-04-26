@@ -3,6 +3,7 @@ import './create.css'
 import CardToTextarea from '../CardToTextarea/CardToTextarea.jsx';
 import Card from '../Card.jsx'
 import { useNavigate } from 'react-router-dom'
+import { setSentence } from '../StoreSentences.jsx';
 
 
 let apiKey = import.meta.env.VITE_MY_API_KEY
@@ -13,14 +14,32 @@ const Create = () => {
     const [data, setData] = useState(null);
     const [submitted, setSubmitted] = useState(false);
     const navigate = useNavigate();
-    const [AIinfographics, setAIinfographics] = useState(false);
+
+ 
+    const sentenceFunction = (data) => {
+      if (data) {
+        return data.split('.');
+      }
+      return [];  
+    };
+    
   
+    const sentences = sentenceFunction(data);
+
+
+    const handlePerfect = () => {
+      setSentence(sentences)
+      navigate('/PerfectIG')
+    }
+    
+    
+    
     const handleAIinfographics = () => {
-      setAIinfographics(true);
+      navigate('/InfoGraphic')
     }
 
   const handleSubmit = (e) => {
-    e.preventDefault();``
+    // e.preventDefault();``
     setSubmitted(true);
 
     const requestOptions = {
@@ -82,7 +101,7 @@ const Create = () => {
                 className='text-box'
                 ></textarea>
             </div>
-            { value?.length > 0 && AIinfographics &&
+            { value?.length > 0 && 
             (submitted ? (
               <p>Kindly wait for your summary</p>  
             ):(
@@ -95,7 +114,7 @@ const Create = () => {
         
 
         <div className="summary">
-          {data?.length > 0 && AIinfographics &&
+          {data?.length > 0 &&
           <Card
             card='create-card'
             title="Copy your summary"
@@ -106,7 +125,7 @@ const Create = () => {
           {data?.length > 0 &&
           <div className="actual-summary">
             <h2 className='text'>Summary</h2>
-            <CardToTextarea data={data} onDelete={handleDelete}/>
+            <CardToTextarea text={data} onDelete={handleDelete}/>
           </div> 
           }
 
@@ -116,14 +135,15 @@ const Create = () => {
             title="Generate your infograph"
             text="Paste your copied text 'Ctrl V' in the text box below and generate your infographic"
           />
+
           }
         </div>
-        {!AIinfographics &&
+        {data?.length > 0 &&
         <div className='info-option'>
-          <button className='g-button' onClick={() => navigate('/PerfectIG')}>Perfect InfoGraphics</button>
+          <button className='g-button' onClick={handlePerfect}>Perfect InfoGraphics</button>
           <button className='c-button' onClick={handleAIinfographics}>AI InfoGraphics</button>
-        </div>}
-
+        </div>
+        }
 
       </div>
       

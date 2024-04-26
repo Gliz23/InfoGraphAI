@@ -34,7 +34,7 @@
     width: 70%;
     height: auto;
     color:black;
-    font-size: 50px;
+    font-size: 35px;
     font-family: Georgia, Times, 'Times New Roman', serif;
 }
 .template1 .text-container .text-box2{
@@ -69,7 +69,7 @@
 }
 .template1 .text-container .text-box5{
     position: absolute;
-    transform: translateX(5rem);  
+    left:5rem;  
     top: 55rem;
     width: 40%;
     height: auto;
@@ -89,7 +89,7 @@
 }
 .template1 .text-container .text-box7{
     position: absolute;
-    transform: translateX(4rem);  
+    left:4rem;  
     top: 81rem;
     width: 40%;
     height: auto;

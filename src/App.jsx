@@ -14,6 +14,7 @@ import About from './Components/About/About.jsx'
 import Contact from './Components/Contact/Contact.jsx'
 import Footer from './Components/Footer/Footer.jsx'
 import ImageGen from './Components/ImageGen.jsx'
+import SentenceList from './Components/SentenceList.jsx'
 
 
 
@@ -38,7 +39,7 @@ const App = () => {
         <Route path = '/Contact' element = {<><Navbar class='contact-nav'/><Contact/></>} />
         <Route path = '/PerfectIG' element = {<><Navbar class='perfect-nav'/><ImageGen/></>} />
 
-        <Route path = '/*' element = {<><NoPage/></>} />
+        <Route path = '/*' element = {<><NoPage/><SentenceList/></>} />
       </Routes>
   </BrowserRouter>
     </>

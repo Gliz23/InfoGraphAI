@@ -58,3 +58,6 @@
 .c-button, .s-button{
     margin: 10px;
 }
+.break-text {
+    word-break:break-all;
+  }

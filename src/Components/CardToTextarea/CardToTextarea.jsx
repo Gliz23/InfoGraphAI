@@ -61,7 +61,7 @@ const CardToTextarea = (props) => {
                 (
                 <div className="summary-items">    
                     <div className="summary-card">
-                        <p>{text}</p>                
+                        <p className='break-text'>{props.text}</p>                
                     </div>  
 
                     <span className='buttons'>
