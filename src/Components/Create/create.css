@@ -29,8 +29,8 @@
     display: flex;
     width:15%;
     height: auto;
-    background-color: rgba(14, 11, 14, 0.884);
-    color:rgb(247, 247, 247);
+    background-color: rgb(166, 170, 173);
+    color:rgb(15, 15, 15);
     border-radius: 20px;
     padding: 20px;
     font-size: 15px;
@@ -54,7 +54,7 @@
     border-radius: 2rem;
     border-width:0.5px;
     border-color: none;
-    background: rgb(221, 216, 211);
+    background: rgb(241, 241, 241);
     padding: 1.5rem;
     margin-top: 1rem;
     font-size: 0.875rem;

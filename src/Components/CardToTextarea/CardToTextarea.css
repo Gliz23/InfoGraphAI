@@ -17,15 +17,13 @@
     height: 300px;
     border-radius: 2rem;
     border: 1px solid rgba(255, 255, 255, 0.8);
-    border-color: #5d477ce5;
-    background: linear-gradient(rgba(59, 50, 59, 0.63),rgba(69, 60, 75, 0.685));
+    background-color:rgb(198, 202, 206);
     padding: 1.5rem;
     margin-top: 1rem;
     font-size: 0.875rem;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
     font-weight:500;
-    color: #FFFFFF;
-    border-color: #6B7280;
+    color: #272323;
 }
 .editing-text-box{
     display: flex;
@@ -34,15 +32,13 @@
     height: 300px;
     border-radius: 2rem;
     border-width:0.5px;
-    border-color: #5d477ce5;
-    background: linear-gradient(rgba(136, 125, 136, 0.521),rgba(136, 125, 136, 0.521));
+    background-color:rgb(255, 255, 255);
     padding: 1.5rem;
     margin-top: 1rem;
     font-size: 0.875rem;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
     font-weight:500;
-    color: #000000;
-    border-color: #6B7280;
+    color: #222121;
 }
 .c-button:active, .s-button:active {
     box-shadow: 0 0 8px 3px rgba(255, 164, 0, 0.8);
