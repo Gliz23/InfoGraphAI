@@ -36,7 +36,7 @@ const App = () => {
         </>}/>
 
         <Route path = '/Contact' element = {<><Navbar class='contact-nav'/><Contact/></>} />
-        <Route path = '/PerfectIG' element = {<><Navbar/><ImageGen/></>} />
+        <Route path = '/PerfectIG' element = {<><Navbar class='perfect-nav'/><ImageGen/></>} />
 
         <Route path = '/*' element = {<><NoPage/></>} />
       </Routes>
