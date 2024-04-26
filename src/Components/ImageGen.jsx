@@ -2,7 +2,7 @@ import React from 'react'
 import html2canvas from 'html2canvas';
 import Text1 from './BG Templates/Template1/Text1.jsx';
 import Text2 from './BG Templates/Template2/Text2.jsx';
-import Text3 from './BG Templates/Template3/Text2.jsx';
+import Text3 from './BG Templates/Template3/Text3.jsx';
 
 
 
