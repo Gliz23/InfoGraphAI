@@ -119,7 +119,7 @@ const Create = () => {
           }
         </div>
         {!AIinfographics &&
-        <div>
+        <div className='info-option'>
           <button className='g-button' onClick={() => navigate('/PerfectIG')}>Perfect InfoGraphics</button>
           <button className='c-button' onClick={handleAIinfographics}>AI InfoGraphics</button>
         </div>}

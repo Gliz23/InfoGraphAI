@@ -69,17 +69,15 @@
     margin-right: 30px;
 }
 .g-button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 50px;
     background: rgba(224, 50, 181, 0.87);
     cursor: pointer;
     border: 0;
     outline: 0;
+    margin: 10px;
+    padding: 14px 25px;
+    font-size: 16px;
+    border-radius: 30px;
+    color: white;
 }
 .g-button:active {
     box-shadow: 0 0 8px 3px rgba(255, 164, 0, 0.8);
