@@ -1,6 +1,7 @@
 import React from 'react'
 import html2canvas from 'html2canvas';
 import Text1 from './BG Templates/Template1/Text1.jsx';
+import Text2 from './BG Templates/Template2/Text2.jsx';
 
 
 
@@ -26,6 +27,8 @@ class ImageGen extends React.Component {
       return (
         <div>
           <Text1/>
+          <button className ={'fg-button'} onClick={this.captureImage}>Download Image</button>
+          <Text2/>
           <button className ={'fg-button'} onClick={this.captureImage}>Download Image</button>
         </div>
       );
