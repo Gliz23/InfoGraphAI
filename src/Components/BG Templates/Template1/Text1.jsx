@@ -6,7 +6,7 @@ const Text1 = () => {
     
   return (
         <div>
-          <h1>Your Infographic</h1>
+          <h1 className='perfect-title'>First InfoGraphic</h1>
           <T1 
           imageUrl={imageUrl}
           text1='Text 1'

@@ -77,3 +77,8 @@ a{
     border: 0;
     outline: 0;
 }
+.perfect-title{
+    width:100;
+    text-align: center;
+    margin: 10px;
+}
