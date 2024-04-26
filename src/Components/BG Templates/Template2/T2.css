@@ -34,14 +34,14 @@
     width: 70%;
     height: auto;
     color:black;
-    font-size: 50px;
+    font-size: 35px;
     font-family: Georgia, Times, 'Times New Roman', serif;
 }
 .template2 .text-container .text-box2{
     position: absolute;
-    left: 18rem;  
-    top: 15rem;
-    width: 40%;
+    left: 9rem;  
+    top: 11rem;
+    width: 50%;
     height: auto;
     color:black;
     font-size: 20px;
@@ -49,9 +49,9 @@
 }
 .template2 .text-container .text-box3{
     position: absolute;
-    left: 5rem;  
-    top: 28rem;
-    width: 40%;
+    left: 7rem;  
+    top: 20rem;
+    width: 38%;
     height: auto;
     color:black;
     font-size: 20px;
@@ -60,8 +60,8 @@
 .template2 .text-container .text-box4{
     position: absolute;
     left: 18rem;  
-    top: 41rem;
-    width: 40%;
+    top: 37rem;
+    width: 38%;
     height: auto;
     color:black;
     font-size: 20px;
@@ -69,9 +69,9 @@
 }
 .template2 .text-container .text-box5{
     position: absolute;
-    transform: translateX(5rem);  
-    top: 55rem;
-    width: 40%;
+    left:7rem;  
+    top: 53rem;
+    width: 38%;
     height: auto;
     color:black;
     font-size: 20px;
@@ -80,8 +80,8 @@
 .template2 .text-container .text-box6{
     position: absolute;
     left: 18rem;  
-    top: 68rem;
-    width: 40%;
+    top: 69rem;
+    width: 38%;
     height: auto;
     color:black;
     font-size: 20px;
@@ -89,9 +89,9 @@
 }
 .template2 .text-container .text-box7{
     position: absolute;
-    transform: translateX(4rem);  
-    top: 81rem;
-    width: 40%;
+    left: 4rem;  
+    top: 85rem;
+    width: 70%;
     height: auto;
     color:black;
     font-size: 20px;
