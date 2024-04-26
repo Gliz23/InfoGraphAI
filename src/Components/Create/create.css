@@ -1,11 +1,11 @@
 .create{
     width:100%;
     min-height: 100vh; 
-    background: rgba(146, 145, 145, 0.856);
+    background: rgba(14, 7, 7, 0.856);
 
     background-size: cover;
     background-position: center;
-    color: #474747f3;
+    color: #000000f3;
     display: flex;
     padding-top: 7rem;
     flex-direction: column;
@@ -30,7 +30,7 @@
     display: flex;
     width:15%;
     height: auto;
-    background-color: rgba(19, 18, 19, 0.411);
+    background-color: rgba(14, 11, 14, 0.884);
     color:rgb(247, 247, 247);
     border-radius: 20px;
     padding: 20px;
@@ -55,13 +55,13 @@
     border-radius: 2rem;
     border-width:0.5px;
     border-color: none;
-    background: rgb(31, 16, 0)
+    background: rgb(231, 226, 220);
     padding: 1.5rem;
     margin-top: 1rem;
     font-size: 0.875rem;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
     font-weight:500;
-    color: #FFFFFF;
+    color: #0a0a0a;
     border-color: #6B7280;
 }
 .text-box::placeholder{
