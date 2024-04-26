@@ -2,6 +2,7 @@ import React, { useState} from 'react'
 import './create.css'
 import CardToTextarea from '../CardToTextarea/CardToTextarea.jsx';
 import Card from '../Card.jsx'
+import { useNavigate } from 'react-router-dom'
 
 
 let apiKey = import.meta.env.VITE_MY_API_KEY
@@ -11,9 +12,12 @@ const Create = () => {
     const [value, setValue] = useState('');
     const [data, setData] = useState(null);
     const [submitted, setSubmitted] = useState(false);
-
-
+    const navigate = useNavigate();
+    const [AIinfographics, setAIinfographics] = useState(false);
   
+    const handleAIinfographics = () => {
+      setAIinfographics(true);
+    }
 
   const handleSubmit = (e) => {
     e.preventDefault();``
@@ -78,7 +82,7 @@ const Create = () => {
                 className='text-box'
                 ></textarea>
             </div>
-            { value?.length > 0 && 
+            { value?.length > 0 && AIinfographics &&
             (submitted ? (
               <p>Kindly wait for your summary</p>  
             ):(
@@ -91,7 +95,7 @@ const Create = () => {
         
 
         <div className="summary">
-          {data?.length > 0 &&
+          {data?.length > 0 && AIinfographics &&
           <Card
             card='create-card'
             title="Copy your summary"
@@ -114,6 +118,12 @@ const Create = () => {
           />
           }
         </div>
+        {!AIinfographics &&
+        <div>
+          <button className='g-button' onClick={() => navigate('/PerfectIG')}>Perfect InfoGraphics</button>
+          <button className='c-button' onClick={handleAIinfographics}>AI InfoGraphics</button>
+        </div>}
+
 
       </div>
       

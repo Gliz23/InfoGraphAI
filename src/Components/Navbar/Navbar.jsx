@@ -23,6 +23,7 @@ const Navbar = (props) => {
             <li onClick={() => navigate('/InfoGraphic')}>InfoGraphic</li>
             
             <li><button className ='button' onClick={() => navigate('/Contact')}>Contact Us</button></li>
+
         </ul>
       
     </nav>
