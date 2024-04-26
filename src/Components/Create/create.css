@@ -5,7 +5,7 @@
 
     background-size: cover;
     background-position: center;
-    color: #af9d9d65;
+    color: #474747f3;
     display: flex;
     padding-top: 7rem;
     flex-direction: column;
@@ -55,9 +55,7 @@
     border-radius: 2rem;
     border-width:0.5px;
     border-color: none;
-    background: linear-gradient(
-        rgba(210, 84, 214, 0.596),
-        rgba(90, 34, 128, 0.685));
+    background: rgb(31, 16, 0)
     padding: 1.5rem;
     margin-top: 1rem;
     font-size: 0.875rem;
