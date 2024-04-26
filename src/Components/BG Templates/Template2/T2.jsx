@@ -4,7 +4,7 @@ import './T2.css'
 const T2 = (props) => {
 
   return (
-    <div className='template1' id='template1'>
+    <div className='template1' id='template2'>
       <img src={props.imageUrl} alt="Your Image" />
       <div className="text-container">
 

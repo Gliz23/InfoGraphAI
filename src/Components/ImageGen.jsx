@@ -8,7 +8,8 @@ import Text2 from './BG Templates/Template2/Text2.jsx';
 
 class ImageGen extends React.Component {
     captureImage = () => {
-      const elementToCapture = document.getElementById('template1');
+      const template_num = 2
+      const elementToCapture = document.getElementById(`template${template_num}`);
   
       html2canvas(elementToCapture)
         .then((canvas) => {
