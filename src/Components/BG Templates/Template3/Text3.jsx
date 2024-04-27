@@ -2,7 +2,7 @@ import React from 'react'
 import T3 from './T3.jsx';
 import imageUrl from '../../../assets/info-bg3.png';
 
-const Text3 = () => {
+const Text3 = (props) => {
     
   return (
         <div>
