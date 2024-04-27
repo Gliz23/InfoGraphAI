@@ -1,9 +1,10 @@
-import React, { useState} from 'react'
+import React, { useState, useEffect} from 'react'
 import './create.css'
 import CardToTextarea from '../CardToTextarea/CardToTextarea.jsx';
 import Card from '../Card.jsx'
 import { useNavigate } from 'react-router-dom'
 import { setSentence } from '../StoreSentences.jsx';
+import { setAiData } from '../storeData.jsx';
 
 
 let apiKey = import.meta.env.VITE_MY_API_KEY
@@ -35,11 +36,11 @@ const Create = () => {
     
     
     const handleAIinfographics = () => {
+      setAiData(data)
       navigate('/InfoGraphic')
     }
 
   const handleSubmit = (e) => {
-    // e.preventDefault();``
     setSubmitted(true);
 
     const requestOptions = {
@@ -49,7 +50,6 @@ const Create = () => {
         'Authorization': `Bearer ${apiKey}`   
       },
       body: JSON.stringify({
-        // prompt: value + `\\n\\nTl;dr`,
         prompt: `Create an infographic ordered text with this text ${value} and the following instructions.
         1. It must be 8 sentences with a fullstop only at the end of the sentence.
         2. The 8 points must include a title.
@@ -70,13 +70,23 @@ const Create = () => {
         const text = dt.choices[0].text;
         setSubmitted(false);
         setData(text)
-        
+        localStorage.setItem('summary', JSON.stringify(text))
+        fetchLocalStorage()
       })
       .catch((error) => {
         setSubmitted(false);
         console.log('Error:', error);
     });
   }
+
+  const fetchLocalStorage = () => {
+    const result = localStorage.getItem('summary')
+    setData(JSON.parse(result))
+  }
+
+  useEffect(() => {
+    fetchLocalStorage()
+  }, [])
 
 
   const handleInputChange = (event) => {
@@ -118,6 +128,7 @@ const Create = () => {
         
 
         <div className="summary">
+          
           {data?.length > 0 &&
           <Card
             card='create-card'

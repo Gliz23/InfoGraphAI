@@ -1,24 +1,22 @@
-import React, { useState, useRef } from 'react';
+import React, { useState} from 'react';
 import './InfoGraphic.css';
-// import axios from 'axios';
-import image from '../../assets/nicebg.jpg';
 import OpenAI from 'openai';
-import Card from '../Card.jsx'
+import { getAiData } from '../storeData.jsx';
+import { ImageEditorComponent } from '@syncfusion/ej2-react-image-editor';
+import '../../ImageEditor.css'
 
 const openai = new OpenAI({ apiKey:import.meta.env.VITE_MY_API_KEY, dangerouslyAllowBrowser: true });
 
 const InfoGraphic = () => {
   const [infoImage, setInfoImage] = useState('');
-  const inputRef = useRef(null);
+  const [generated, setGenerated] = useState(false);
+  const aiData = getAiData()
 
   async function imageMaker() {
-    if (inputRef.current.value === '') {
-      return 0;
-    }
-    // 1792
+    setGenerated(true)
     try {
       const response = await openai.images.generate({
-        prompt: `Create a professional infographic with charts and pictures on a white background with this text: ${inputRef.current.value}`,
+        prompt: `Create a professional infographic with charts and pictures on a white background with this text: ${aiData}`,
         model: 'dall-e-2',
         n: 1,
         size: '1024x1024'
@@ -28,54 +26,50 @@ const InfoGraphic = () => {
       
       const image_url = response.data[0].url;
       setInfoImage(image_url);
-      console.log(inputRef.current.value);
-      console.log(infoImage)
+      setGenerated(false)
     } catch (e) {
       console.error('Error generating image: ', e);
     }
   }
-
+  
   return (
-    <div className='info-space'>
-      <Card
-        card='info-card'
-        title="Edit the text"
-        text="You can edit the text in the text button before generating"
-      />
 
+  <div>
+    <div className='info-space'>
       <div className='infographic-maker'>
         <div className='header'>
-          InfoGraphic Maker
+          AI InfoGraphic
         </div>
-
-        <div className='loading'>
-          <div className='image'>
-            <img src={infoImage === '' ? image : infoImage} alt='infographic' />
+        {aiData?.length > 0 &&
+          <div className='loading'>
+            <div className='image'>
+              <img src={infoImage} alt='infographic' />
+            </div>
           </div>
-        </div>
-
-        <div className="prompt-box">
-          <input
-            type='text' 
-            ref={inputRef}
-            id='prompt-box'
-            className="prompt-input"
-            placeholder='text from the summary result'
-          />
+        }
+        {aiData?.length > 0 &&
+          (generated ? (
+              <p className='wait-message'>Kindly wait for your infographic</p>  
+            ):(
           <button
             className="g-button"
             onClick={() => imageMaker()}>
             Generate
           </button>
-        </div>
+        ))
+        }
       </div>
-
-      <Card
-        card='info-card'
-        title="Edit the infographic"
-        text="Edit the infographic by right clicking on the image and selecting the 'save image as...'option. Then in the editor, click browse and select the image." 
-      />
     </div>
+      {aiData?.length > 0 ? (
+        <div className="image-editor-container">
+          <ImageEditorComponent/>
+        </div>
+        ) : (
+          alert("Couldn't load image. Please check your internet connection")
+        )
+      }
+  </div>
+    
   );
 }
 
