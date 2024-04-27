@@ -40,7 +40,7 @@ const InfoGraphic = () => {
         <div className='header'>
           AI InfoGraphic
         </div>
-        {aiData?.length > 0 &&
+        {aiData?.length > 0 &&         
           <div className='loading'>
             <div className='image'>
               <img src={infoImage} alt='infographic' />
