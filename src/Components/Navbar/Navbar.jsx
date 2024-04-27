@@ -20,7 +20,7 @@ const Navbar = (props) => {
         <ul>
             <li onClick={() => navigate('/Home')}>Home</li>
             <li onClick={() => navigate('/Create')}>Create</li>
-            <li onClick={() => navigate('/InfoGraphic')}>InfoGraphic</li>
+            <li onClick={() => navigate('/InfoGraphic')}>AI InfoGraphic</li>
             
             <li><button className ='button' onClick={() => navigate('/Contact')}>Contact Us</button></li>
 
