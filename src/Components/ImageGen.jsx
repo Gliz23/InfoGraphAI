@@ -15,7 +15,7 @@ class ImageGen extends React.Component {
   
 
     captureImage = (template_num) => {
-      
+      console.log(template_num)
       const elementToCapture = document.getElementById(`template${template_num}`);
 
        
@@ -25,12 +25,15 @@ class ImageGen extends React.Component {
           const link = document.createElement('a');
           link.href = image;
           link.download = 'infographai_image.png';
-          link.click();
+          document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
         })
         .catch((error) => {
           console.error('Error capturing image:', error);
         });
     };
+  
   
     render() {
       const sentence = getSentence()
@@ -39,19 +42,19 @@ class ImageGen extends React.Component {
       return (
         <div className='info-templates'>
           <Text1 sentence = {sentence} />
-          <button className ={'fg-button'} onClick={this.captureImage(1)}>Download Image</button>
+          <button className ={'fg-button'} onClick={() => this.captureImage(1)}>Download Image</button>
           <Text2 sentence = {sentence}/>
-          <button className ={'fg-button'} onClick={this.captureImage(2)}>Download Image</button>
+          <button className ={'fg-button'} onClick={() => this.captureImage(2)}>Download Image</button>
           <Text3 sentence = {sentence}/>
-          <button className ={'fg-button'} onClick={this.captureImage(3)}>Download Image</button>
+          <button className ={'fg-button'} onClick={() => this.captureImage(3)}>Download Image</button>
           <Text4 sentence = {sentence} />
-          <button className ={'fg-button'} onClick={this.captureImage(4)}>Download Image</button>
+          <button className ={'fg-button'} onClick={() => this.captureImage(4)}>Download Image</button>
           <Text5 sentence = {sentence}/>
-          <button className ={'fg-button'} onClick={this.captureImage(5)}>Download Image</button>
+          <button className ={'fg-button'} onClick={() => this.captureImage(5)}>Download Image</button>
           <Text6 sentence = {sentence}/>
-          <button className ={'fg-button'} onClick={this.captureImage(6)}>Download Image</button>
+          <button className ={'fg-button'} onClick={() => this.captureImage(6)}>Download Image</button>
           <Text7 sentence = {sentence} />
-          <button className ={'fg-button'} onClick={this.captureImage(7)}>Download Image</button>
+          <button className ={'fg-button'} onClick={() => this.captureImage(7)}>Download Image</button>
         </div>
       );
     }
