@@ -30,7 +30,7 @@
 .template6 .text-container .text-box1{
     position: absolute;
     left: 6rem;  
-    top: 5rem;
+    top: 2rem;
     width: 70%;
     height: auto;
     color:black;
@@ -39,7 +39,7 @@
 }
 .template6 .text-container .text-box2{
     position: absolute;
-    left: 18rem;  
+    left: 5rem;  
     top: 15rem;
     width: 40%;
     height: auto;
@@ -49,7 +49,7 @@
 }
 .template6 .text-container .text-box3{
     position: absolute;
-    left: 5rem;  
+    left: 20rem;  
     top: 28rem;
     width: 40%;
     height: auto;
@@ -59,7 +59,7 @@
 }
 .template6 .text-container .text-box4{
     position: absolute;
-    left: 18rem;  
+    left: 3rem;  
     top: 41rem;
     width: 40%;
     height: auto;
@@ -69,7 +69,7 @@
 }
 .template6 .text-container .text-box5{
     position: absolute;
-    left:5rem;  
+    left:20rem;  
     top: 55rem;
     width: 40%;
     height: auto;
@@ -79,7 +79,7 @@
 }
 .template6 .text-container .text-box6{
     position: absolute;
-    left: 18rem;  
+    left: 3rem;  
     top: 68rem;
     width: 40%;
     height: auto;
@@ -89,7 +89,7 @@
 }
 .template6 .text-container .text-box7{
     position: absolute;
-    left:4rem;  
+    left:20rem;  
     top: 81rem;
     width: 40%;
     height: auto;
