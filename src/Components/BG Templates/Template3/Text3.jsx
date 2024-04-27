@@ -9,14 +9,13 @@ const Text3 = () => {
           <h1 className='perfect-title'>Third InfoGraphic</h1>
           <T3 
           imageUrl={imageUrl}
-          text1='Text 1'
-          text2='Text 2'
-          text3='Text 3'
-          text4='Text 4'
-          text5='Text 5'
-          text6='Text 6'
-          text7='Text 7'
-          text8='InfoGraph AI'
+          text1={props.sentence[0]}
+          text2={props.sentence[1]}
+          text3={props.sentence[2]}
+          text4={props.sentence[3]}
+          text5={props.sentence[4]}
+          text6={props.sentence[5]}
+          text7={props.sentence[6]}
           />
         </div>
       );
