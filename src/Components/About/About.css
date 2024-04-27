@@ -9,7 +9,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+    width: 95%;
 }
 
 .about-img{
@@ -18,8 +18,7 @@
     height: auto;
 }
 .about-left{
-    flex-basis:40%;
-    padding-right: 1rem;
+    flex-basis:35%;
 }
 .about h3{
     font-size: 25px;
@@ -32,6 +31,6 @@
     color: #4b4a4a
 }
 .about-right{
-    flex-basis:56%;
+    flex-basis:62%;
     text-align: justify;
 }
