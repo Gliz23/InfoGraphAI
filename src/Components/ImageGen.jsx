@@ -13,7 +13,7 @@ class ImageGen extends React.Component {
     captureImage = () => {
       let template_num = 1
       const elementToCapture = document.getElementById(`template${template_num}`);
-      console.log(template_num)
+
        
       html2canvas(elementToCapture)
         .then((canvas) => {
@@ -36,9 +36,9 @@ class ImageGen extends React.Component {
         <div className='info-templates'>
           <Text1 sentence = {sentence} />
           <button className ={'fg-button'} onClick={this.captureImage}>Download Image</button>
-          <Text2/>
+          <Text2 sentence = {sentence}/>
           <button className ={'fg-button'} onClick={this.captureImage}>Download Image</button>
-          <Text3/>
+          <Text3 sentence = {sentence}/>
           <button className ={'fg-button'} onClick={this.captureImage}>Download Image</button>
         </div>
       );
