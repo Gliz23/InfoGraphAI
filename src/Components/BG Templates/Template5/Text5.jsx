@@ -1,6 +1,6 @@
 import React from 'react'
 import T5 from './T5.jsx';
-import imageUrl from '../../../assets/info-bg5.png';
+import imageUrl from '../../../assets/info-bg5.jpg';
 
 const Text5 = (props) => {
    
