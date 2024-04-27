@@ -14,8 +14,8 @@ class ImageGen extends React.Component {
 
   
 
-    captureImage = () => {
-      let template_num = 1
+    captureImage = (template_num) => {
+      
       const elementToCapture = document.getElementById(`template${template_num}`);
 
        
@@ -39,19 +39,19 @@ class ImageGen extends React.Component {
       return (
         <div className='info-templates'>
           <Text1 sentence = {sentence} />
-          <button className ={'fg-button'} onClick={this.captureImage}>Download Image</button>
+          <button className ={'fg-button'} onClick={this.captureImage(1)}>Download Image</button>
           <Text2 sentence = {sentence}/>
-          <button className ={'fg-button'} onClick={this.captureImage}>Download Image</button>
+          <button className ={'fg-button'} onClick={this.captureImage(2)}>Download Image</button>
           <Text3 sentence = {sentence}/>
-          <button className ={'fg-button'} onClick={this.captureImage}>Download Image</button>
+          <button className ={'fg-button'} onClick={this.captureImage(3)}>Download Image</button>
           <Text4 sentence = {sentence} />
-          <button className ={'fg-button'} onClick={this.captureImage}>Download Image</button>
+          <button className ={'fg-button'} onClick={this.captureImage(4)}>Download Image</button>
           <Text5 sentence = {sentence}/>
-          <button className ={'fg-button'} onClick={this.captureImage}>Download Image</button>
+          <button className ={'fg-button'} onClick={this.captureImage(5)}>Download Image</button>
           <Text6 sentence = {sentence}/>
-          <button className ={'fg-button'} onClick={this.captureImage}>Download Image</button>
+          <button className ={'fg-button'} onClick={this.captureImage(6)}>Download Image</button>
           <Text7 sentence = {sentence} />
-          <button className ={'fg-button'} onClick={this.captureImage}>Download Image</button>
+          <button className ={'fg-button'} onClick={this.captureImage(7)}>Download Image</button>
         </div>
       );
     }
