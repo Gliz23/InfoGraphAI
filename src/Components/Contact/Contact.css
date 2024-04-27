@@ -1,7 +1,7 @@
 .contact{
     padding-top:7rem;
-    margin: 80px;
-    padding: 80px;
+    margin: 7rem auto;
+    padding: 1rem;
     max-width: 90%;
     display: flex;
     align-content: center;
@@ -9,7 +9,6 @@
 }
 .contact-col{
     flex-basis: 40%;
-    margin-top: 5rem;
 }
 .col{
     flex-basis: 48%;
