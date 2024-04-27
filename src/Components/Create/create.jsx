@@ -18,7 +18,7 @@ const Create = () => {
  
     const sentenceFunction = (data) => {
       if (data) {
-        return data.split('.');
+        return data.split('-');
       }
       return [];  
     };
@@ -50,7 +50,11 @@ const Create = () => {
       },
       body: JSON.stringify({
         // prompt: value + `\\n\\nTl;dr`,
-        prompt: `Create an infographic ordered text with a title and 7 bulleted points on new lines with the following content: ${value}.`,
+        prompt: `Create an infographic ordered text with this text ${value} and the following instructions.
+        1. It must be 8 sentences with a fullstop only at the end of the sentence.
+        2. The 8 points must include a title.
+        3. The point must be a summary and key information in the text
+        4. The points should not be numbered` ,
         temperature: 0.1,
         max_tokens: 500,
         top_p: 1,
@@ -103,7 +107,7 @@ const Create = () => {
             </div>
             { value?.length > 0 && 
             (submitted ? (
-              <p>Kindly wait for your summary</p>  
+              <p className='wait-message'>Kindly wait for your summary</p>  
             ):(
             <button 
             className='s-button'

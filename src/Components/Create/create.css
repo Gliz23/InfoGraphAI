@@ -68,3 +68,6 @@
     display: flex;
     flex-direction: row;
 }
+.wait-message{
+    color:white
+}
