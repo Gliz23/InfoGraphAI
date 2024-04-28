@@ -27,7 +27,7 @@ const App = () => {
         <Route index element = {<><Navbar/><Hero/><About/><Footer/></>}/>
         <Route path = '/Home' element = {<><Navbar/><Hero/><About/><Footer/></>} />
         <Route path = '/Create' element = {<><Navbar class='create-nav'/><Create/><Footer/></>} />
-        <Route path = '/InfoGraphic' element = {<><Navbar/><InfoGraphic/></>}/>
+        <Route path = '/InfoGraphic' element = {<><Navbar  class='infograph-nav'/><InfoGraphic/></>}/>
 
         <Route path = '/Contact' element = {<><Navbar class='contact-nav'/><Contact/><Footer/></>} />
         <Route path = '/PerfectIG' element = {<><Navbar class='perfect-nav'/><ImageGen/></>} />
