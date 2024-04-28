@@ -10,7 +10,12 @@ const openai = new OpenAI({ apiKey:import.meta.env.VITE_MY_API_KEY, dangerouslyA
 const InfoGraphic = () => {
   const [infoImage, setInfoImage] = useState('');
   const [generated, setGenerated] = useState(false);
+  const [imageEditing, setImageEditing] = useState(false);
   const aiData = getAiData()
+
+  const imageEditor = () => {
+    setImageEditing(true)
+  }
 
   async function imageMaker() {
     setGenerated(true)
@@ -51,22 +56,26 @@ const InfoGraphic = () => {
           (generated ? (
               <p className='wait-message'>Kindly wait for your infographic</p>  
             ):(
-          <button
-            className="g-button"
-            onClick={() => imageMaker()}>
-            Generate
-          </button>
+          <div>
+            <button
+              className="g-button"
+              onClick={() => imageMaker()}>
+              Generate
+            </button>
+            <button
+              className="g-button"
+              onClick={() => imageEditor()}>
+              Edit
+            </button>
+          </div>
         ))
         }
       </div>
     </div>
-      {aiData?.length > 0 ? (
+      {imageEditing && 
         <div className="image-editor-container">
           <ImageEditorComponent/>
         </div>
-        ) : (
-          alert("Couldn't load image. Please check your internet connection")
-        )
       }
   </div>
     
