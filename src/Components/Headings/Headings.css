@@ -1,0 +1,17 @@
+.heading{
+    color: #021447d2;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 80px 0 20px;
+}
+.heading h2{
+    font-size: 2rem;
+    color:black;
+    margin-top: 2rem;
+    text-transform: none;
+}
+.heading span{
+    color:#021447d2;
+}
