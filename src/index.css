@@ -16,25 +16,25 @@ a{
     cursor: pointer;
 }
 .container{
-    padding-left: 1.5%;
-    padding-right: 7%;
+    padding: 0 7%;
 }
 .button{
     background: #FFF;
     color: #212121;
-    padding: 14px 25px;
-    font-size: 16px;
-    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+    border-radius: 15px;
     cursor: pointer;
     border: 0;
     outline: 0;
 }
-.s-button, .c-button{
+.text-button{
     background: #8503ff;
     color: #f1f0f0f8;
-    padding: 14px 25px;
-    font-size: 16px;
-    border-radius: 30px;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 15px;
     cursor: pointer;
     border: 0;
     outline: 0;
@@ -71,9 +71,9 @@ a{
     color: #292727f8;
     width:18%;
     margin:20px 41%;
-    padding: 14px 25px;
+    padding: 10px;
     font-size: 16px;
-    border-radius: 30px;
+    border-radius: 15px;
     width:auto;
     cursor: pointer;
     border: 0;
