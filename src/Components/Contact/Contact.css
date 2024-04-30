@@ -1,31 +1,39 @@
 .contact{
-    padding-top:7rem;
-    margin: 7rem auto;
-    padding: 1rem;
-    max-width: 90%;
+    max-width: 100%;
     display: flex;
     align-content: center;
     justify-content: space-between;
+    background: rgba(204, 201, 201, 0.486);
+    padding: 5%;
 }
-.contact-col{
+.contact .col{
     flex-basis: 40%;
+    color: #312b31; 
 }
-.col{
-    flex-basis: 48%;
-    color: #676767
-} 
-.col h2{
+
+.col h1{
     font-size: 25px;
     font-weight: 600;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    padding-bottom: 5rem;
-    color: #021447d2;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
 }
 .col ul li{
     display: flex;
     align-items: center;
-    margin: 20px;
+    margin: 20px 0;
     cursor: pointer;
+}
+.col ul li img{
+    width: 25px;
+    margin-right:10px;
+}
+.contact-col form .enter{
+    display: flex;
+    flex-direction: row;
+}
+.entries{
+    padding:5px;
 }
 .contact form input, .contact form textarea{
     display: block;
@@ -37,4 +45,8 @@
     margin-bottom: 15px;
     margin-top: 5px;
     resize: none;
+}
+.col h1 img{
+    width:35px;
+    margin-left: 10px;
 }
