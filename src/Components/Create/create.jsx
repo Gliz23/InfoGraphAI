@@ -1,7 +1,6 @@
 import React, { useState, useEffect} from 'react'
 import './create.css'
 import CardToTextarea from '../CardToTextarea/CardToTextarea.jsx';
-import Card from '../Card.jsx'
 import { useNavigate } from 'react-router-dom'
 import { setSentence } from '../StoreSentences.jsx';
 import { setAiData } from '../storeData.jsx';
@@ -99,70 +98,56 @@ const Create = () => {
 
 
   return (
-    
-      <div className='create'>
-        <div className="create-text">
-            <h3 className='text'>
-                Your Text!
-            </h3>
-            <div className="input-text">
-                <textarea 
-                placeholder='Paste your text here...'
-                onChange={handleInputChange}
-                rows={6}
-                id='summary-text-box'
-                // value={value}
-                className='text-box'
-                ></textarea>
+    <div className='create'>
+        <div className="intro">
+          <div className="first-guide">
+            <div className="heading">
+              <p>Summary for InfoGraphics</p>
             </div>
-            { value?.length > 0 && 
-            (submitted ? (
-              <p className='wait-message'>Kindly wait for your summary</p>  
-            ):(
-            <button 
-            className='s-button'
+            <div className="info1"> 
+              <p>Generate a summary text which will be used to create the infographic</p> 
+              <p>Copy, edit or delete summary by clicking on the respective icons</p>
+            </div>
+            <div className='info-option'>
+              <button className='perf-button' onClick={handlePerfect}>Perfect InfoGraphics</button>
+              <button className='ai-button' onClick={handleAIinfographics}>AI InfoGraphics</button>
+            </div>
+          </div>
+          <div className="icon">
+            
+          </div>
+          {data?.length > 0 &&
+          <div className="summary">
+            <div className="actual-summary">
+              <h2 className='text'>Summary</h2>
+              <CardToTextarea text={data} onDelete={handleDelete}/>
+            </div> 
+          </div>
+          }
+        </div>
+      <div 
+        className="text-area">
+          <textarea 
+            placeholder='Paste your text here...'
+            onChange={handleInputChange}
+            rows={1}
+            id='summary-text-box'
+            className='text-box'
+          ></textarea>
+          { value?.length > 0 &&
+          (!submitted ? (
+          <button 
+            className='submit-button'
             onClick={handleSubmit}
-            >Submit</button>
-            ))}
-        </div>
-        
-
-        <div className="summary">
+            >Submit
+          </button>):(
+            value?.length > 0 && 
+            submitted  &&
+              <p className='wait-message'>Kindly wait for your summary</p>  
+          ))}
           
-          {data?.length > 0 &&
-          <Card
-            card='create-card'
-            title="Copy your summary"
-            text="This can be done by simply clicking the copy button"
-          />
-          }
-
-          {data?.length > 0 &&
-          <div className="actual-summary">
-            <h2 className='text'>Summary</h2>
-            <CardToTextarea text={data} onDelete={handleDelete}/>
-          </div> 
-          }
-
-          {data?.length > 0 &&
-          <Card
-            card='create-card'
-            title="Generate your infograph"
-            text="Paste your copied text 'Ctrl V' in the text box below and generate your infographic"
-          />
-
-          }
-        </div>
-        {data?.length > 0 &&
-        <div className='info-option'>
-          <button className='g-button' onClick={handlePerfect}>Perfect InfoGraphics</button>
-          <button className='c-button' onClick={handleAIinfographics}>AI InfoGraphics</button>
-        </div>
-        }
-
       </div>
-      
-    
+    </div>
   )
 }
 
