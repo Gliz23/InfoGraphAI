@@ -10,21 +10,7 @@
     flex-direction: column;
     width: 100%;
 }
-.summary-card{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 300px;
-    border-radius: 2rem;
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    background-color:rgb(198, 202, 206);
-    padding: 1.5rem;
-    margin-top: 1rem;
-    font-size: 0.875rem;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-    font-weight:500;
-    color: #272323;
-}
+
 .editing-text-box{
     display: flex;
     flex-direction: column;
@@ -40,7 +26,7 @@
     font-weight:500;
     color: #222121;
 }
-.c-button:active, .s-button:active {
+.text-button:active {
     box-shadow: 0 0 8px 3px rgba(255, 164, 0, 0.8);
 }
 @keyframes glow {
@@ -55,7 +41,7 @@
     }
 }
 
-.c-button, .s-button{
+.text-button{
     margin: 10px;
 }
 .break-text {
