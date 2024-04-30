@@ -58,16 +58,16 @@
     color: rgba(0, 0, 0, 0.616);
     padding-left: 35px;
     margin-right: 30px;
-}
+} 
 .g-button{
     background: rgba(224, 50, 181, 0.87);
     cursor: pointer;
     border: 0;
     outline: 0;
     margin: 10px;
-    padding: 14px 25px;
-    font-size: 16px;
-    border-radius: 30px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 15px;
     color: white;
 }
 .g-button:active {
