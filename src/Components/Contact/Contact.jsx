@@ -1,5 +1,8 @@
 import React from 'react'
 import './Contact.css'
+import contact_mail from '../../assets/contact-mail.png'
+import email_icon from '../../assets/contact-mail.png'
+import contact_icon from '../../assets/phone.png'
 
 const Contact = () => {
 
@@ -29,33 +32,37 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact">
+    <div className="contact" id='contact'>
       <div className="col">
-        <h2>Reach out to us</h2>
-        <p> You can contact us via
-        </p>
+        <h1> Send us a feedback <img src={contact_mail} alt="" className="" />
+        </h1>
         <ul>
-          <li>infographaidev@gmail.com</li>
-          <li>+233 544991601</li>
-          <li>infographai@gmail.com</li>
+          <li><img src={email_icon} alt="" />infographaidev@gmail.com</li>
+          <li><img src={contact_icon} alt="" />+233 544991601</li> 
         </ul>
       </div>
       <div className="contact-col">
         <form onSubmit={onSubmit}>
-          <label>
-            Your name
-          </label>
-          <input type='text' name='name' placeholder='Enter your name' required/>
-          <label>
-            Phone Number
-          </label>
-          <input type='tel' name='phone'placeholder='Enter your phone number' required/>
+          <div className="enter">
+            <div className="entries">
+              <label>
+                Your name
+              </label>
+              <input type='text' name='name' placeholder='Enter your name' required/>
+            </div>
+            <div className="entries">
+              <label>
+                Phone Number
+              </label>
+              <input type='tel' name='phone'placeholder='Enter your phone number' required/>
+            </div>
+          </div>
           <label>
             Drop your comments
           </label>
           <textarea name='comments' rows='7' placeholder='Enter comments' required>
           </textarea>
-          <button type='submit' className='s-button dark-b'>
+          <button type='submit' className='fg-button dark-b'>
             Send
           </button>
         </form>
