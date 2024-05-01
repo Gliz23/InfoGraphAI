@@ -17,7 +17,7 @@ const Create = () => {
  
     const sentenceFunction = (data) => {
       if (data) {
-        return data.split('-');
+        return data.split('.');
       }
       return [];  
     };
@@ -78,7 +78,11 @@ const Create = () => {
 
   useEffect(() => {
     fetchLocalStorage()
-  }, [])
+  }, [submitted])
+
+  // useEffect(() => {
+  //   localStorage.clear()
+  // }, [])
 
 
   const handleInputChange = (event) => {
