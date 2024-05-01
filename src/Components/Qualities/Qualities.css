@@ -41,3 +41,13 @@
     opacity: 1;
     padding-top: 0;
 }
+
+@media (max-width: 650px) {
+    .qualities{
+        flex-direction: column;
+    }
+    .quality{
+        flex-basis: 100%;
+        margin: 20px;
+    }
+}

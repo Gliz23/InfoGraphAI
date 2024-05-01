@@ -15,19 +15,19 @@
 }
 @keyframes floatImage {
     0% {
-        transform: translateX(2rem);
+        transform: translateX(1rem);
     }
     25%{
-        transform: translateY(-2rem);
+        transform: translateY(-1rem);
     }
     50% {
-        transform: translateX(-2rem);
+        transform: translateX(-1rem);
     }
     75%{
-        transform: translateY(2rem);
+        transform: translateY(1rem);
     }
     100%{
-        transform: translateX(2rem);
+        transform: translateX(1rem);
     }
 }
 
@@ -53,9 +53,26 @@
     margin-top: 0;
 }
 .about .heading h2{
-    margin-top: 0;
+    margin-top: 12px;
 }
 
 .smile{
     width:15px;
+}
+
+/* media query */
+@media (max-width: 800px) {
+    .about{
+        flex-direction: column;
+    }
+    .about-left{
+        flex-basis: 100%;
+        margin: 20px;
+    }
+    .about-left .about-img{
+        padding:12%;
+    }
+    .about-right{
+        flex-basis: 100%;
+    }
 }

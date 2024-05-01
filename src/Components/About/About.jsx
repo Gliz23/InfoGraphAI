@@ -16,7 +16,7 @@ const About = () => {
         <div className="about-right">
             <div className = 'heading'>
                 <p>About us</p>
-                <h2>WHO <span>WE ARE</span></h2>  
+                <h2>INFOGRAPH <span>AI</span></h2>  
             </div>
             <p> InfoGraphAI is a tool that can create visually appealing and informative infographics with AI and data visualization.
                 <br/>

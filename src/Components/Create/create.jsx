@@ -3,7 +3,6 @@ import './create.css'
 import CardToTextarea from '../CardToTextarea/CardToTextarea.jsx';
 import { useNavigate } from 'react-router-dom'
 import { setSentence } from '../StoreSentences.jsx';
-import { setAiData } from '../storeData.jsx';
 
 
 let apiKey = import.meta.env.VITE_MY_API_KEY
@@ -32,12 +31,6 @@ const Create = () => {
       navigate('/PerfectIG')
     }
     
-    
-    
-    const handleAIinfographics = () => {
-      setAiData(data)
-      navigate('/InfoGraphic')
-    }
 
   const handleSubmit = (e) => {
     setSubmitted(true);
@@ -99,33 +92,31 @@ const Create = () => {
 
   return (
     <div className='create'>
+        <div className = 'create-heading'>
+              <p>Summary for</p>
+              <h2>Info<span>Graphics</span></h2>
+          </div>
         <div className="intro">
           <div className="first-guide">
-            <div className="heading">
-              <p>Summary for InfoGraphics</p>
-            </div>
             <div className="info1"> 
-              <p>Generate a summary text which will be used to create the infographic</p> 
-              <p>Copy, edit or delete summary by clicking on the respective icons</p>
+              <p>Generate a summary text which will be used<br/>
+                 to create the infographic. Copy, edit or <br/>
+                 delete summary by clicking on the respective<br/>
+                  icons</p>
             </div>
             <div className='info-option'>
-              <button className='perf-button' onClick={handlePerfect}>Perfect InfoGraphics</button>
-              <button className='ai-button' onClick={handleAIinfographics}>AI InfoGraphics</button>
+              <button className='perf-button' onClick={handlePerfect}>Generate</button>
             </div>
-          </div>
-          <div className="icon">
-            
           </div>
           {data?.length > 0 &&
           <div className="summary">
             <div className="actual-summary">
-              <h2 className='text'>Summary</h2>
               <CardToTextarea text={data} onDelete={handleDelete}/>
             </div> 
           </div>
           }
         </div>
-      <div 
+        <div 
         className="text-area">
           <textarea 
             placeholder='Paste your text here...'
@@ -146,8 +137,8 @@ const Create = () => {
               <p className='wait-message'>Kindly wait for your summary</p>  
           ))}
           
+        </div>
       </div>
-    </div>
   )
 }
 

@@ -90,3 +90,10 @@ a{
 .break-text {
     white-space: break-spaces;
   }
+/*media-query */
+@media (max-width: 1000px){
+    .container{
+        padding-left:5%;
+        padding-right:5%;
+    }
+}

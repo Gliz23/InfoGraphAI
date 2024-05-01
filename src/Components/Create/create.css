@@ -1,134 +1,173 @@
 .create{
-    width:100%;
-    height: 100vh; 
-    min-height: fit-content;
-    background: rgb(49, 65, 56, 0.411);
+    max-width: 100%;
+    display: block;
+    align-content: center;
+    justify-content: space-between;
+    background: #575a5a;
+    padding: 0 1.5rem;
     color: white;
-    display: flex;
-    padding-top: 5rem;
-    flex-direction: column;
 }   
 .intro{
-    margin: 2rem;
     display: flex;
     flex-direction: row;
     width:100%;
+    padding-bottom: 7rem;
+    overflow-y: hidden;
 }
 .first-guide{
     display: flex;
     flex-direction: column;
-    flex-basis: 30%;
+    width: 50%;
     
 }
-.first-guide .heading{
-    width: 100%;
-    display: flex;
-    font-size: 2.8rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
 .first-guide .info1{
-    font-size:0.9rem;
-    width:100%;
+    font-size:18px;
+    width:80%;
     height:auto;
+    font-weight: 700;
     min-height: 12rem;
+    padding:5rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.075);
+    animation: floatDiv 4s ease-in-out infinite;
 }
-.intro .icon{
-    width:30%
+
+@keyframes floatDiv {
+    0% {
+        transform: translateY(0.5rem);
+    }
+    50% {
+        transform: translateY(-0.5rem);
+    }
+    100%{
+        transform: translateY(0.5rem);
+    }
 }
+
 .text-area{
-    width:100%;
-    height: 2rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:#575a5a ;
+    z-index:1;
+    height: 7rem;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    padding-bottom: 2rem;
-    padding-left:2rem;
 }
 .text-area .text-box{
-    display:block;
+    display:flex;
     width:80%;
-    height: auto;
+    height: 4rem;
     border-radius: 1rem;
     border-width:0;
-    background: rgba(247, 247, 247, 0.26);
+    background: #EBECFE;
     padding: 1.5rem;
     margin:auto;
     font-size: 0.875rem;
     font-weight:500;
-    color: #e4e3e3;
+    color: #2e2b2b;
     outline: transparent;
-    position: fixed;
 }
 .text-box::placeholder{
-    color: rgb(248, 243, 243);
+    color: #2e2b2b;
 }
-.text-area .button{
-    display: flex;
-    flex-direction: column;
-    width:20%;
-    margin-right:0px;
-}
+
 .text-area .wait-message{
-    width:20%;
+    color: white;
+    font-size: 20px;
 }
 .summary{
-    width:50%;
-    min-width: fit-content;
+    width:45%;
     display: flex;
     flex-direction: column;
+}
+.create-heading{
+    color: #d0dcfd;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 80px 0 20px;
+}
+.create-heading h2{
+    font-size: 2rem;
+    color:rgb(231, 227, 227);
+    margin-top: 2rem;
+    text-transform: none;
+}
+.create-heading span{
+    color:#c6d5fd;
 }
 .actual-summary{
     width: 100%;
     height:auto;
-    margin: 1rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     background-color: #e4e3e327;
-    padding: 2rem;
     border-radius: 20px;
+    padding: 10px 25px;
+    line-height: 20px;
 }
-.second-guide{
-    margin: auto;
-}
-.submit-button{
+.text-area .submit-button{
+    width: 6rem;
+    height: 3rem;
     display: flex;
-    background: #FFF;
-    color: #212121;
-    padding: 15px;
+    background-color:#c2cdff;
+    color:rgb(41, 38, 38);
+    font-weight: 700;
+    padding: 11px;
     font-size: 20px;
     border-radius: 15px;
     cursor: pointer;
+    margin-top:2rem;
+    margin-right:1.5rem;
     border: 0;
     outline: 0;
-    position: fixed;
-    margin-right:1rem;
 }
 .info-option{
     display: flex;
     flex-direction: row;
-    margin-bottom: 1rem;
 }
 .ai-button{
-    background: #8a65a8;
-    color: #d1d1d1;
+    background: #342d3a;
+    color: #fffcfc;
     padding: 10px;
-    margin: 10px;
     font-size: 15px;
+    margin: 10px;
     border-radius: 15px;
     cursor: pointer;
-    border:#8a65a8;
-    outline:auto;
+    border:0;
+    outline:0;
 }
 .perf-button{
-    background: #ffffff00;
-    color: #ffffff;
+    background: #c2cdff;
+    color: #161515;
     padding: 10px;
     margin: 10px;
     font-size: 15px;
     border-radius: 15px;
     cursor: pointer;
-    border:#FFF;
-    outline:auto;
+    border:0;
+    outline:0;
+}
+
+@media (max-width: 800px){
+    .text-area .submit-button{
+        width: 4rem;
+        height: 3rem;
+        font-weight: 600;
+        padding: 11px 7px;
+        font-size: 15px;
+        border-radius: 12px;
+    }
+    .create .intro{
+        display: block;
+    }
+    .create .intro .first-guide, .summary{
+        width:95%;
+        margin-top: 20px;
+    }
+    
 }
 
 

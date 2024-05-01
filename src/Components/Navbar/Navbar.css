@@ -27,10 +27,51 @@ nav{
 .container ul li:active {
     box-shadow: 0 0 5px 2px rgba(172, 148, 112, 0.842);
   }
-.scroll-nav, .contact-nav{
+.scroll-nav, .contact-nav, .create-nav{
     background: #86b4a5e7;
     transition: 0.5s;
 }
 .perfect-nav, .infograph-nav {
     background: #661cbbe7;
+}
+.menu-icon{
+    display:none;
+}
+/*media-query */
+@media (max-width: 800px){
+    .logo{
+        width: 40px;
+    }
+    nav ul li{
+        margin: 0 20px;
+    }
+}
+@media (max-width: 700px){
+    nav{
+        padding: 10px 0;
+    }
+    nav ul{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background:#21a052 ;
+        z-index:-1;
+        width: 150px;
+        padding-top: 50px;
+        transition: 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px 40px;
+    }
+    .menu-icon{
+        display: block;
+        width: 30px;
+        cursor:pointer;
+        background: white;
+    }
+    .hide-mobile-menu{
+        right:-150px;
+    }
 }

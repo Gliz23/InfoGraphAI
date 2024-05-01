@@ -66,17 +66,17 @@ const CardToTextarea = (props) => {
 
                     <span className='buttons'>
                         <button
-                        className='text-button'
+                        className='ai-button'
                         onClick={handleCopy}
                         >Copy</button>
                     
                         <button 
-                        className= 'text-button'
+                        className= 'ai-button'
                         onClick={handleToggleEdit}
                         >Edit</button>
 
                         <button
-                        className='text-button'
+                        className='ai-button'
                         onClick={handleDelete}
                         >Delete</button>
                     </span>  

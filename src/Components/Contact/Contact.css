@@ -9,10 +9,11 @@
 .contact .col{
     flex-basis: 40%;
     color: #312b31; 
+    padding-right: 25px;
 }
 
 .col h1{
-    font-size: 25px;
+    font-size: 15px;
     font-weight: 600;
     margin-bottom: 25px;
     display: flex;
@@ -20,12 +21,13 @@
 }
 .col ul li{
     display: flex;
+    font-size: 15px;
     align-items: center;
-    margin: 20px 0;
+    margin: 7px;
     cursor: pointer;
 }
 .col ul li img{
-    width: 25px;
+    width: 20px;
     margin-right:10px;
 }
 .contact-col form .enter{
@@ -47,6 +49,26 @@
     resize: none;
 }
 .col h1 img{
-    width:35px;
+    width:20px;
     margin-left: 10px;
+}
+
+/* media query */
+@media (max-width: 700px){
+    .contact{
+        display:block;
+        padding:20px;
+    } 
+    .contact .col h1{
+        font-size: 15px;
+    }
+    .contact .col ul li{
+        font-size: 15px;
+    }
+    .contact-col{
+        padding-top: 30px;
+    }
+    .entries{
+        width: 100%;
+    }
 }
