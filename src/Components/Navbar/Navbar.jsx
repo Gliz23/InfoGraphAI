@@ -15,7 +15,7 @@ const Navbar = (props) => {
     })
   },[])
     
-  const [mobileMenu, setMobileMenu] = useState(true);
+  const [mobileMenu, setMobileMenu] = useState(false);
   const toggleMenu = () => {
     mobileMenu ? setMobileMenu(false): setMobileMenu(true);
   }
