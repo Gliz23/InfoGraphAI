@@ -107,10 +107,11 @@ const Create = () => {
                  to create the infographic. Copy, edit or <br/>
                  delete summary by clicking on the respective<br/>
                   icons</p>
+                  <div className='info-option'>
+                    <button className='perf-button' onClick={handlePerfect}>Generate</button>
+                  </div>
             </div>
-            <div className='info-option'>
-              <button className='perf-button' onClick={handlePerfect}>Generate</button>
-            </div>
+            
           </div>
           {data?.length > 0 &&
           <div className="summary">
