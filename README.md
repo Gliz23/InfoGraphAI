@@ -52,41 +52,7 @@ How to run it locally.
    code .
    ```
 
-5. - You need an API key from openAI to run this app.
-
-     - Go to the official site (https://platform.openai.com)
-
-     - Sign up and locate the API keys section by moving the mouse pointer to the 'Your Profile' icon (P) at the top left section of the page.
-
-     - Click on create new secret key and copy the key and paste it in a secure place you can acces later.
-
-     - In the root directory of the cloned app, create a .env file and put the key in the file.
-
-     ```bash
-     VITE_MY_API_KEY = YOUR_API_KEY
-     ```
-
-     - Replace this text above 'YOUR_API_KEY' with the api key you generated.
-
-   - You need an API key from Web3forms too.
-
-     - On the official website, (https://web3forms.com) and scroll to the bottom of the page.
-
-     - Click on the 'CREATE YOUR ACCESS KEY' button.
-
-     - Type in your email.
-
-     - You will find your access key in the inbox of your email you provided.
-
-     - In your .env file and put the key in the file.
-
-     ```bash
-     VITE_ACCESS_API_KEY = YOUR_ACCESS_KEY
-     ```
-
-     - Replace this text above 'YOUR_ACCESS_KEY' with the api key you got from your mail.
-
-6. In the terminal, navigate to the directory of the repository you cloned and run
+5. In the terminal, navigate to the directory of the repository you cloned and run
 
 ```bash
 npm run dev
