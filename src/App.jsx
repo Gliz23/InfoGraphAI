@@ -26,7 +26,7 @@ const App = () => {
           <Headings title='About Us' subtitle = 'Our' span='Solutions'/>
           <Qualities/>
           <About/>
-          <Headings title='Contact Us' subtitle = 'Get' span='In TOuch'/>
+          <Headings title='Contact Us' subtitle = 'Get' span='In Touch'/>
           <Contact/>
         </div>
         <Footer/></>}/>
