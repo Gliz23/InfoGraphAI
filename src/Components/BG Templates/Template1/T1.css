@@ -32,9 +32,10 @@
     left: 6rem;  
     top: 5rem;
     width: 70%;
+    font-weight: bold;
     height: auto;
     color:black;
-    font-size: 27px;
+    font-size: 20px;
     font-family: Georgia, Times, 'Times New Roman', serif;
 }
 .template1 .text-container .text-box2{
@@ -44,7 +45,7 @@
     width: 40%;
     height: auto;
     color:black;
-    font-size: 20px;
+    font-size: 16px;
     font-family: Georgia, Times, 'Times New Roman', serif;
 }
 .template1 .text-container .text-box3{
@@ -54,7 +55,7 @@
     width: 40%;
     height: auto;
     color:black;
-    font-size: 20px;
+    font-size: 16px;
     font-family: Georgia, Times, 'Times New Roman', serif;
 }
 .template1 .text-container .text-box4{
@@ -64,7 +65,7 @@
     width: 40%;
     height: auto;
     color:black;
-    font-size: 20px;
+    font-size: 16px;
     font-family: Georgia, Times, 'Times New Roman', serif;
 }
 .template1 .text-container .text-box5{
@@ -74,7 +75,7 @@
     width: 40%;
     height: auto;
     color:black;
-    font-size: 20px;
+    font-size: 16px;
     font-family: Georgia, Times, 'Times New Roman', serif;
 }
 .template1 .text-container .text-box6{
@@ -84,7 +85,7 @@
     width: 40%;
     height: auto;
     color:black;
-    font-size: 20px;
+    font-size: 16px;
     font-family: Georgia, Times, 'Times New Roman', serif;
 }
 .template1 .text-container .text-box7{
@@ -94,7 +95,7 @@
     width: 40%;
     height: auto;
     color:black;
-    font-size: 20px;
+    font-size: 16px;
     font-family: Georgia, Times, 'Times New Roman', serif;
 }
 .template1 .text-container .text-box8{
@@ -104,6 +105,6 @@
     width: 100%;
     height: auto;
     color:black;
-    font-size: 20px;
+    font-size: 16px;
     font-family: "Outfit", sans-serif;
 }
