@@ -17,16 +17,18 @@ const Create = () => {
  
     const sentenceFunction = (data) => {
       if (data) {
-        return data.split('.');
+        return data.split('*');
       }
       return [];  
     };
     
   
     const sentences = sentenceFunction(data);
+    console.log(sentences)
 
 
     const handlePerfect = () => {
+
       setSentence(sentences)
       navigate('/PerfectIG')
     }
@@ -45,7 +47,7 @@ const Create = () => {
         prompt: `Create an infographic ordered text with this text ${value} and the following instructions.
         1. It must be 8 sentences with a fullstop only at the end of the sentence.
         2. The 8 points must include a title.
-        3. The point must be a summary and key information in the text
+        3. The point must be a summary and key information in the text starting with (*)
         4. The points should not be numbered` ,
         temperature: 0.1,
         max_tokens: 500,
@@ -91,6 +93,8 @@ const Create = () => {
 
   const handleDelete = () => {
     setData(null)
+    // setLocalStorage to empty
+    localStorage.removeItem('summary')
   }
 
 
