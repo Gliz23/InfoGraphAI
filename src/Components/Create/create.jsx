@@ -52,7 +52,7 @@ const Create = () => {
         temperature: 0.1,
         max_tokens: 500,
         top_p: 1,
-        frequency_penalty: 0,
+        frequency_penalty: 0.5,
         presence_penalty: 0.5,
         stop: ['"""'],
       }),
@@ -81,10 +81,6 @@ const Create = () => {
   useEffect(() => {
     fetchLocalStorage()
   }, [submitted])
-
-  // useEffect(() => {
-  //   localStorage.clear()
-  // }, [])
 
 
   const handleInputChange = (event) => {
