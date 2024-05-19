@@ -60,7 +60,7 @@ npm run dev
 
 You can acces the app by pasting the diplayed link in your browser.
 
-7. You need internect connection to generate the Summary and the InfoGraphic.
+7. You need internect connection to generate the Summary.
 
 ![Logo](https://github.com/Gliz23/InfoGraphAI/blob/main/src/assets/flogo.png)
 
