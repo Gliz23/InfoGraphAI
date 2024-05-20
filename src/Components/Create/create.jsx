@@ -47,8 +47,9 @@ const Create = () => {
         prompt: `Create an infographic ordered text with this text ${value} and the following instructions.
         1. It must be 6 sentences only with a fullstop only at the end of the sentence.
         2. There must be a title.
-        3. The point must be a summary and key information in the text starting with (*)
-        4. The points should not be numbered` ,
+        3. The sentences should be approximately the same length not more than 30 words.
+        4. The point must be a summary and key information in the text starting with (*)
+        5. The points should not be numbered` ,
         temperature: 0.1,
         max_tokens: 500,
         top_p: 1,
