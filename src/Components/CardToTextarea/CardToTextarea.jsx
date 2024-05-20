@@ -3,7 +3,7 @@ import './CardToTextarea.css'
 
 const CardToTextarea = (props) => {
     const [ editing, setEditing ] = useState(false);
-    const [ text, setText ] = useState(props.data);
+    const [ text, setText ] = useState(props.text);
     const [isCopy, setIsCopy] = useState(false);
 
     const handleToggleEdit = () => {
@@ -19,10 +19,14 @@ const CardToTextarea = (props) => {
     }
 
     async function copyTextToClipboard(text) {
-        if ("clipboard" in navigator) {
-            return await navigator.clipboard.writeText(text);
+        try {
+            if ("clipboard" in navigator) {
+              await navigator.clipboard.writeText(text);
+            }
+          } catch (err) {
+            console.log(err);
+          }
         }
-    }
 
     const handleCopy = () => {
         copyTextToClipboard(text)
@@ -32,7 +36,8 @@ const CardToTextarea = (props) => {
             setTimeout(() => {
                 setIsCopy(false)
             }, 1500); 
-        }).catch(err => console.log(err))
+        })
+        .catch((err) => console.log(err))
     }
      
     const handleDelete = () => {

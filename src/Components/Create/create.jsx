@@ -24,7 +24,7 @@ const Create = () => {
     
   
     const sentences = sentenceFunction(data);
-    console.log(sentences)
+
 
 
     const handlePerfect = () => {

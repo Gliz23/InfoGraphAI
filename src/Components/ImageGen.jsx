@@ -15,7 +15,6 @@ class ImageGen extends React.Component {
   
 
     captureImage = (template_num) => {
-      console.log(template_num)
       const elementToCapture = document.getElementById(`template${template_num}`);
 
        
